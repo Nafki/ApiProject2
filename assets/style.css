@@ -1,0 +1,89 @@
+
+
+body{
+    background-color: rgb(215, 193, 236);
+}
+
+#home h1{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:rgb(53, 53, 156);
+    line-height: 50px; 
+}
+
+#home p{
+    font-size: x-large;
+    font-weight: 200;
+    color:rgb(46, 46, 158);
+}
+
+#nasaimage{
+    width: 35vw;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+}
+#cloud{
+    color: ghostwhite;
+    
+}
+
+#cloud img:hover{
+    transition: all ease-in-out 0.4s;
+    transform:scale(1.1);
+}
+
+.nasa-btn{
+    margin: 15px 0 0 0;
+    padding:0;
+    text-align: center;
+}
+.nasa-btn a{
+    color: seashell;
+    font-weight: normal;
+    line-height: 40px;
+    perspective: 100px;
+}
+.nasa-btn a span{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    padding:2px 15px;
+    background:rgb(75, 75, 235);
+    border-radius: 1px;
+    transition: 0.3s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+
+}
+.nasa-btn a span::before{
+    position: absolute;
+    top:100%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    color:rgb(62, 171, 185);
+    padding: 2px 20px;
+    background: #000;
+    border-radius: 1px;
+    transition:0.3s;
+    transform: rotatex(-90deg);
+    content: attr(data-hover);
+    transform-origin: 50% 0;
+}
+
+.nasa-btn a:hover span,
+.nasa-btn a:focus span{
+        transform: rotatex(90deg) translateY(-22px);
+}
+
+.date{
+    text-align: center;
+}
+.footer a, button{
+    background:rgb(81, 81, 221);
+    align-content: center;
+}
